@@ -40,7 +40,7 @@ article {
 
 section {
     background-color: #e6fef1;
-    border-left: 10px;
+    border-left: 10px solid #059669;
     padding: 1em; /* meghatározatlan méret */
     margin-bottom: 2em;
     border-radius: 10px; /* meghatározatlan méret */
@@ -51,17 +51,14 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-bottom: 1em;
+    text-align: justify;
 }
 
 h2 {
     color: #065f46;
     margin-top: 0;
     font-size: 1.8rem;
-}
-
-.szoveg p {
-    margin-bottom: 1em;
-    text-align: justify;
 }
 
 .szoveg img {
@@ -75,4 +72,15 @@ h2 {
     html {
         font-size: 112.5%;
     }
+
+    .szoveg {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    
 }
